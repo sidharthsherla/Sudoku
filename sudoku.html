@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sudoku Game</title>
+    <link rel="stylesheet" href="sudoku.css">
+</head>
+<body>
+    <h1>Sudoku Game</h1>
+    <div class="difficulty-level">
+        <label for="difficulty">Difficulty Level:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+    <div class="game-container">
+        <table id="sudokuBoard"></table>
+        <div class="number-column">
+            <div class="number-cell" onclick="highlightCells(1)">1</div>
+            <div class="number-cell" onclick="highlightCells(2)">2</div>
+            <div class="number-cell" onclick="highlightCells(3)">3</div>
+            <div class="number-cell" onclick="highlightCells(4)">4</div>
+            <div class="number-cell" onclick="highlightCells(5)">5</div>
+            <div class="number-cell" onclick="highlightCells(6)">6</div>
+            <div class="number-cell" onclick="highlightCells(7)">7</div>
+            <div class="number-cell" onclick="highlightCells(8)">8</div>
+            <div class="number-cell" onclick="highlightCells(9)">9</div>
+        </div>
+    </div>
+    <button id="checkButton" onclick="checkInput()">Check</button>
+    <div id="result"></div>
+    <script src="sudoku.js"></script>
+</body>
+</html>
